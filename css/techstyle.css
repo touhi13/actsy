@@ -96,11 +96,12 @@ form.d-flex button {
     font-weight: bold;
     text-transform: uppercase;
     background: #e57f84;
+    transition: 0.3s;
 }
 
 form.d-flex button:hover {
-    background: #f4eae6;
-    color: #2f5061;
+    background: #4297a0;
+    color: #fff;
 }
 
 ul.dropdown-menu {
@@ -212,7 +213,6 @@ section.accounting-service-area h2 {
     font-weight: bold;
     background: #e57f84;
     padding: 20px 0px;
-    letter-spacing: 10px;
 }
 
 .get-intouch {
@@ -415,5 +415,9 @@ h2.title {
 
     font-size: 16px;
     
+}
+div#navbarSupportedContent {
+    margin-left: 40px!important;
+    margin-top: 10px;
 }
 }
