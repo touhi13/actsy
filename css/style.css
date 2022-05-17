@@ -378,7 +378,7 @@ hr {
      missing area
    **************************
 */
-.missing {
+/* .missing {
     background-color: #48bf91;
 }
 
@@ -389,11 +389,43 @@ hr {
 .missing button {
     background-color: #48bf91;
 }
-.missing .card-footer{
+
+.missing .card-footer {
     border-top: 2px solid black !important;
 }
-.missing .btn-outline-secondary, .btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:visited {
+
+.missing .btn-outline-secondary,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary:visited {
     background-color: #48bf91 !important;
+} */
+.card-title {
+    color: darkblue
+}
+
+.card-footer {
+    background: #fff;
+    padding: 15px 0px;
+}
+
+span i {
+    color: #48bf91;
+    font-size: 48px;
+    margin-top: 51px;
+    padding: 10px;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: #fff;
+    background: #48bf91;
+    padding: 10px 20px;
+}
+
+.card-body p {
+    color: #000;
+    margin: 25px 0px;
 }
 
 /************************
