@@ -1,34 +1,37 @@
-body{
-	
-	font-size: 14px;
-	font-family:Montserrat,regular;
+body {
+
+    font-size: 14px;
+    font-family: Montserrat, regular;
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
-.section-padding{
+.section-padding {
     padding: 35px 0px;
 }
 
 
-h3{
+h3 {
     color: darkblue;
 }
+
 /*p{
 	color: #ffffde;
 }*/
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
-ul li{
-	list-style: none;
+
+ul li {
+    list-style: none;
 }
 
-.section-padding{
+.section-padding {
     padding: 50px 0px;
 }
+
 /*
 #48bf91 green
 #00008B*/
@@ -45,16 +48,20 @@ header.header {
     /* color: darkblue; */
     padding: 5px 0px;
 }
+
 i.fas.fa-align-left {
     color: darkblue;
 }
-li.nav-item.dropdown .dropdown-menu{
+
+li.nav-item.dropdown .dropdown-menu {
     display: none;
     top: 45px;
 }
+
 li.nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
+
 ul.navbar-nav.ms-auto li a {
     color: #fff;
     font-size: 16px;
@@ -62,6 +69,7 @@ ul.navbar-nav.ms-auto li a {
     font-weight: 400;
     margin-right: 10px;
 }
+
 form.d-flex button {
     background: darkblue;
     color: #fff;
@@ -70,6 +78,7 @@ form.d-flex button {
     font-size: 16px;
     text-transform: uppercase;
 }
+
 ul.dropdown-menu {
     background: #48bf91;
 }
@@ -165,21 +174,24 @@ ul.dropdown-menu {
     outline: none !important;
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: #fff !important;
     font-size: 65px !important;
     font-weight: bolder !important;
-    background:none !important;
+    background: none !important;
 }
 
 .owl-prev {
     left: 1%;
     color: darkblue;
 }
-button.owl-prev span,button.owl-next span {
+
+button.owl-prev span,
+button.owl-next span {
     color: #48bf91;
 }
 
@@ -194,39 +206,73 @@ button.owl-prev span,button.owl-next span {
 .acc-img img {
     width: 100%;
 }
+
 #center_container {
-  align-items: center;
-  display: flex;
-  min-height: 100%;
+    align-items: center;
+    display: flex;
+    min-height: 100%;
 }
 
 #center {
 
-  padding: 10px;
+    padding: 10px;
 
 }
 
-.article a {font-size: 17px;text-decoration: none;background: #48bf91;padding: 10px 20px;color: #fff;transition: 0.3s;}
+.article a {
+    font-size: 17px;
+    text-decoration: none;
+    background: #48bf91;
+    padding: 10px 20px;
+    color: #fff;
+    transition: 0.3s;
+}
 
-.article a:hover {/* color: #48bf91; *//* background: #48bf91; */color: darkblue;}
+.article a:hover {
+    /* color: #48bf91; */
+    /* background: #48bf91; */
+    color: darkblue;
+}
 
-.article h2 {font-size: 42px;color: darkblue;margin-bottom: 20px;font-weight: bold;}
+.article h2 {
+    font-size: 42px;
+    color: darkblue;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
 
-.article p {font-size: 15px;line-height: 1.8;margin-bottom: 25px;}
+.article p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
 
 /************************
 Why actsy area
 ************************/
-.itemr ul li{
+.itemr ul li {
     display: block;
-    color: #48bf91;font-weight: 600;
+    color: #48bf91;
+    font-weight: 600;
     font-size: 28px;
     margin-bottom: 10px;
 }
-h2.text-center {color: darkblue;font-weight: bold;font-size: 42px;margin-bottom: 100px;}
 
-.wh-img img {width: 100%;}
-.itemr ul li i p {margin: 0px 20px;margin-left: 20px;}
+h2.text-center {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 100px;
+}
+
+.wh-img img {
+    width: 100%;
+}
+
+.itemr ul li i p {
+    margin: 0px 20px;
+    margin-left: 20px;
+}
 
 /*************************
   All in one area
@@ -237,10 +283,14 @@ h2.text-center {color: darkblue;font-weight: bold;font-size: 42px;margin-bottom:
     margin-right: 30px;
     margin-bottom: 50px;
 }
+
 .items h4 {
     color: #48bf91;
 }
-.items p {margin-left: 34px;}
+
+.items p {
+    margin-left: 34px;
+}
 
 /*************************
   Plan  area
@@ -250,17 +300,37 @@ h2.text-center {color: darkblue;font-weight: bold;font-size: 42px;margin-bottom:
     float: left;
     margin-right: 30px;
 }
+
 hr {
     color: darkblue;
     margin-top: 30px;
     width: 300px;
     margin-left: 129px;
 }
+
 /*
    **************************
      Testimonial area
    **************************
 */
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+    max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.testimonials h5 {
+    color: #48bf91;
+}
+
 /*.testimonial {
   background-image: url(../images/demo2.jpg);
   background-size: cover;
@@ -303,20 +373,74 @@ hr {
   font-weight: 300;
 }*/
 
+/*
+   **************************
+     missing area
+   **************************
+*/
+.missing {
+    background-color: #48bf91;
+}
+
+.missing .card-item {
+    background-color: darkblue;
+}
+
+.missing button {
+    background-color: #48bf91;
+}
+.missing .card-footer{
+    border-top: 2px solid black !important;
+}
+.missing .btn-outline-secondary, .btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:visited {
+    background-color: #48bf91 !important;
+}
+
 /************************
 footer area
 ************************/
-footer.footer {background: #48bf91;padding: 50px 0px;}
-.footer-box h3 {font-size: 24px;color: darkblue;margin-bottom: 20px;/* text-align: center; */}
-.service-item ul li a:hover {color: darkblue;border-bottom: 1px solid;padding-bottom: 5px;}
-address {margin-top: 10px;line-height: 1.8;color: darkblue;font-size: 16px;}
-.service-item ul li a {transition: 0.3s;}
-.footer-box a {text-decoration: none;font-size: 17px;color: #fff;padding: 1px;margin-right: 5px;}
+footer.footer {
+    background: #48bf91;
+    padding: 50px 0px;
+}
+
+.footer-box h3 {
+    font-size: 24px;
+    color: darkblue;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+.service-item ul li a:hover {
+    color: darkblue;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+address {
+    margin-top: 10px;
+    line-height: 1.8;
+    color: darkblue;
+    font-size: 16px;
+}
+
+.service-item ul li a {
+    transition: 0.3s;
+}
+
+.footer-box a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    padding: 1px;
+    margin-right: 5px;
+}
 
 div#social {
     margin-bottom: 10px;
 }
-.smGlobalBtn{
+
+.smGlobalBtn {
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -331,83 +455,92 @@ div#social {
     font-weight: normal;
     line-height: 2em;
     border-radius: 25px;
-    -moz-border-radius:25px;
-    -webkit-border-radius:25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
 }
 
 /* facebook button class*/
-.facebookBtn{
+.facebookBtn {
     background: #4060A5;
 }
 
-.facebookBtn:before{ /* use :before to add the relevant icons */
+.facebookBtn:before {
+    /* use :before to add the relevant icons */
     font-family: "FontAwesome";
-    content: "\f09a"; /* add facebook icon */
+    content: "\f09a";
+    /* add facebook icon */
 }
 
-.facebookBtn:hover{
+.facebookBtn:hover {
     color: #4060A5;
     background: #fff;
 }
 
 /* twitter button class*/
-.twitterBtn{
+.twitterBtn {
     background: #00ABE3;
 }
 
-.twitterBtn:before{
-      font-family: "FontAwesome";
-      content: "\f099"; /* add twitter icon */
+.twitterBtn:before {
+    font-family: "FontAwesome";
+    content: "\f099";
+    /* add twitter icon */
 }
 
-.twitterBtn:hover{
-      color: #00ABE3;
-      background: #fff;
+.twitterBtn:hover {
+    color: #00ABE3;
+    background: #fff;
 }
 
 /* google plus button class*/
-.googleplusBtn{
+.googleplusBtn {
     background: #e64522;
 }
 
-.googleplusBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0d5"; /* add googleplus icon */
+.googleplusBtn:before {
+    font-family: "FontAwesome";
+    content: "\f0d5";
+    /* add googleplus icon */
 }
 
-.googleplusBtn:hover{
-      color: #e64522;
-      background: #fff;
+.googleplusBtn:hover {
+    color: #e64522;
+    background: #fff;
 }
 
 /* linkedin button class*/
-.linkedinBtn{
+.linkedinBtn {
     background: #0094BC;
 }
 
-.linkedinBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0e1"; /* add linkedin icon */
+.linkedinBtn:before {
+    font-family: "FontAwesome";
+    content: "\f0e1";
+    /* add linkedin icon */
 }
 
-.linkedinBtn:hover{
-      color: #0094BC;
-      background: #fff;
+.linkedinBtn:hover {
+    color: #0094BC;
+    background: #fff;
 }
 
 
 /* rss button class*/
-.rssBtn{
+.rssBtn {
     background: #e88845;
 }
 
-.rssBtn:before{
-      font-family: "FontAwesome";
-      content: "\f09e"; /* add rss icon */
+.rssBtn:before {
+    font-family: "FontAwesome";
+    content: "\f09e";
+    /* add rss icon */
 }
 
-.rssBtn:hover{
-      color: #e88845;
-      background: #fff;
+.rssBtn:hover {
+    color: #e88845;
+    background: #fff;
 }
-.service-item ul li {display: block;}
+
+.service-item ul li {
+    display: block;
+}
