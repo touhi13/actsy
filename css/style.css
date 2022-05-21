@@ -1,24 +1,32 @@
-body {
-
-    font-size: 14px;
-    font-family: Montserrat, regular;
+html:focus-within {
+    scroll-behavior: smooth;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+body {
+
+    font-size: 15px;
+    font-family: Raleway, regular;
+}
 
 .section-padding {
     padding: 35px 0px;
 }
 
 
-h3 {
+h3,
+h5 {
     color: darkblue;
 }
 
-/*p{
-	color: #ffffde;
-}*/
 ul {
     margin: 0;
     padding: 0;
@@ -28,23 +36,30 @@ ul li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.btn-style {
+    background-color: #e57f84;
+    padding: 10px 20px;
+    color: #fff;
+}
+
 .section-padding {
     padding: 50px 0px;
 }
-
-/*
-#48bf91 green
-#00008B*/
-
-
-
-
 
 /*****************************
  main menu area
 *****************************/
 header.header {
-    background: #48bf91;
+    background: #4297a0;
     /* color: darkblue; */
     padding: 5px 0px;
 }
@@ -71,17 +86,30 @@ ul.navbar-nav.ms-auto li a {
 }
 
 form.d-flex button {
-    background: darkblue;
-    color: #fff;
-    border: 1px solid darkblue;
+    color: #e57f84;
+    border: 1px solid #fff;
     margin-right: 10px;
     font-size: 16px;
     text-transform: uppercase;
+    background: #f4eae6;
+}
+
+form.d-flex button:hover {
+    background: #f4eae6;
+    color: #2f5061;
 }
 
 ul.dropdown-menu {
-    background: #48bf91;
+    background: #4297a0;
+    border: none;
 }
+
+a.dropdown-item:hover {
+    background: #f4eae6;
+    color: red !impotant;
+    color: #2f5061 !important;
+}
+
 
 /**************************
  Slider area start
@@ -111,15 +139,15 @@ ul.dropdown-menu {
 }
 
 .slide-1 {
-    background-image: url('../images/sl2.jpg');
+    background-image: url('../images/bridge.jpg');
 }
 
 .slide-2 {
-    background-image: url('../images/demo2.jpg');
+    background-image: url('../images/demo.jpg');
 }
 
 .slide-3 {
-    background-image: url('../images/sl4.jpg');
+    background-image: url('../images/bridge2.jpg');
 }
 
 .slide-content {
@@ -192,7 +220,7 @@ ul.dropdown-menu {
 
 button.owl-prev span,
 button.owl-next span {
-    color: #48bf91;
+    color: #4297a0;
 }
 
 .owl-next {
@@ -219,19 +247,58 @@ button.owl-next span {
 
 }
 
+.showcase {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.showcase img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99
+}
+
+.showcase .overlay {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 35, 82, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999
+}
+
+.showcase h2 {
+    margin-top: 170px;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.showcase p {
+    margin-top: 8px;
+    font-size: 1.2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
 .article a {
     font-size: 17px;
     text-decoration: none;
-    background: #48bf91;
-    padding: 10px 20px;
-    color: #fff;
     transition: 0.3s;
 }
 
 .article a:hover {
     /* color: #48bf91; */
     /* background: #48bf91; */
-    color: darkblue;
+    background: #2f5061;
 }
 
 .article h2 {
@@ -245,6 +312,30 @@ button.owl-next span {
     font-size: 15px;
     line-height: 1.8;
     margin-bottom: 25px;
+}
+
+.card-footer {
+    background: #fff;
+    padding: 15px 0px;
+}
+
+span i {
+    color: #48bf91;
+    font-size: 48px;
+    margin-top: 51px;
+    padding: 10px;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: #fff;
+    background: #48bf91;
+    padding: 10px 20px;
+}
+
+.card-body p {
+    color: #000;
+    margin: 25px 0px;
 }
 
 /************************
@@ -262,7 +353,7 @@ h2.text-center {
     color: darkblue;
     font-weight: bold;
     font-size: 42px;
-    margin-bottom: 100px;
+    margin-bottom: 45px;
 }
 
 .wh-img img {
@@ -295,10 +386,21 @@ h2.text-center {
 /*************************
   Plan  area
 *************************/
+.plan-content {
+    padding: 100px 0px;
+}
+
 .plan-content img {
     width: 100px;
     float: left;
     margin-right: 30px;
+}
+
+.plan-content p {
+    max-width: 700px;
+    width: 100%;
+    line-height: 1.8;
+    margin: 20px 0px 0px 127px;
 }
 
 hr {
@@ -373,74 +475,28 @@ hr {
   font-weight: 300;
 }*/
 
-/*
-   **************************
-     missing area
-   **************************
-*/
-/* .missing {
-    background-color: #48bf91;
-}
-
-.missing .card-item {
-    background-color: darkblue;
-}
-
-.missing button {
-    background-color: #48bf91;
-}
-
-.missing .card-footer {
-    border-top: 2px solid black !important;
-}
-
-.missing .btn-outline-secondary,
-.btn-outline-secondary:hover,
-.btn-outline-secondary:active,
-.btn-outline-secondary:visited {
-    background-color: #48bf91 !important;
-} */
-.card-title {
-    color: darkblue
-}
-
-.card-footer {
-    background: #fff;
-    padding: 15px 0px;
-}
-
-span i {
-    color: #48bf91;
-    font-size: 48px;
-    margin-top: 51px;
-    padding: 10px;
-}
-
-.card-footer a {
-    text-decoration: none;
-    color: #fff;
-    background: #48bf91;
-    padding: 10px 20px;
-}
-
-.card-body p {
-    color: #000;
-    margin: 25px 0px;
-}
-
 /************************
 footer area
 ************************/
 footer.footer {
-    background: #48bf91;
-    padding: 50px 0px;
+    background: #2f5061;
+    padding: 80px 0px;
+    border-radius: 100px 0px 100px 0px;
+}
+
+.footer-box a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #f4eae6;
+    padding: 1px;
+    margin-right: 5px;
 }
 
 .footer-box h3 {
     font-size: 24px;
-    color: darkblue;
-    margin-bottom: 20px;
-    /* text-align: center; */
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px
 }
 
 .service-item ul li a:hover {
@@ -556,7 +612,6 @@ div#social {
     background: #fff;
 }
 
-
 /* rss button class*/
 .rssBtn {
     background: #e88845;
@@ -575,4 +630,5 @@ div#social {
 
 .service-item ul li {
     display: block;
+    margin-bottom: 14px;
 }
