@@ -54,7 +54,8 @@ p {
 }
 a.btn-style:hover{
     color: #fff;
-    background: #2f9061;
+    background: #4297a0;
+    
 }
 
 .section-padding {
@@ -99,11 +100,13 @@ form.d-flex button {
     font-weight: bold;
     text-transform: uppercase;
     background: #e57f84;
+    border: 1px solid #2f5061;
 }
 
 form.d-flex button:hover {
     background: #f4eae6;
     color: #2f5061;
+    border: 1px solid #2f5061;
 }
 
 ul.dropdown-menu {
@@ -116,7 +119,6 @@ a.dropdown-item:hover {
     color: red !impotant;
     color: #2f5061 !important;
 }
-
 
 /**************************
  Slider area start
@@ -159,8 +161,10 @@ a.dropdown-item:hover {
 
 
 .slide-content1 {
+    text-align: right;
     position: absolute;
     top: 50%;
+    right: 5%;
     transform: translateY(-50%);
     color: #fff;
     padding: 0 10%;
@@ -244,14 +248,19 @@ a.dropdown-item:hover {
 
 .owl-prev {
     left: 1%;
-    color: darkblue;
+    color: #4297a0;
 }
 
 button.owl-prev span,
 button.owl-next span {
     color: #4297a0;
 }
-
+.owl-theme .owl-dots .owl-dot span{
+    background: #f4eae6;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #4297a0;
+}
 .owl-next {
     right: 1%;
 }
@@ -271,7 +280,7 @@ button.owl-next span {
 }
 .service-container {
     overflow: hidden;
-    padding: 100px 0px;
+    padding: 100px 20px;
 }
 
 
@@ -296,8 +305,7 @@ button.owl-next span {
 
 .service-container-reverse{
     overflow: hidden;
-    padding: 100px 30px;
-    background: #f4eae6;
+    padding: 130px 30px;
 }
 .service-content-reverse {
     float: right;
@@ -308,114 +316,50 @@ button.owl-next span {
 .service-thumb-reverse{
     float: left;
 }
-/*
-#center_container {
-    align-items: center;
-    display: flex;
-    min-height: 100%;
-}
 
-#center {
-
-    padding: 10px;
-
-}
-
-.showcase {
-    width: 100%;
-    height: 600px;
-    position: relative;
-    color: white;
-    text-align: center;
-}
-
-.showcase img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99
-}
-
-.showcase .overlay {
-    width: 100%;
-    height: 600px;
-    background-color: rgba(0, 35, 82, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999
-}
-
-.showcase h2 {
-    margin-top: 170px;
-    font-size: 3em;
-    margin-bottom: 30px;
-}
-
-.showcase p {
-    margin-top: 8px;
-    font-size: 1.2em;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-*/
-/*.article a {
-    font-size: 17px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.article a:hover {
-    background: #2f5061;
-}
-
-.article h2 {
-    font-size: 42px;
-    color: darkblue;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.article p {
-    font-size: 15px;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    max-width: 450px;
-    text-align: justify;
-    width: 100%;
-}
-
-.card-footer {
-    background: #fff;
-    padding: 15px 0px;
-}
-
-span i {
-    color: #48bf91;
-    font-size: 48px;
-    margin-top: 51px;
-    padding: 10px;
-}
-
-.card-footer a {
-    text-decoration: none;
-    color: #fff;
-    background: #48bf91;
-    padding: 10px 20px;
-}
-
-.card-body p {
-    color: #000;
-    margin: 25px 0px;
-}*/
 /************************
  Industry area 
 **************************/
-.retail{
+.industry-area-retail{
+    background: #f4eae6;
+    padding: 30px 20px;
+    border-radius: 80px 0px;
+    margin: 120px 0px 100px 0px;
+}
+.retail-img {
+    max-width: 430px;
+    width: 100%;
+    float: right;
+}
+.retail-img img,.ecomm-img img{
+    width: 100%;
+}
+.retail-article {
+    max-width: 400px;
+    width: 100%;
+    float: left;
+}
+.retail-article p,.ecomm-article p {
+    margin: 25px 0px 35px;
+    color: #4297a0;
+}
+.industry-ecomm{
+    margin: 120px 0px;
+
+}
+.ecomm-img{
+    float: left;
+    width: 100%;
+    max-width: 430px;
+}
+.ecomm-article{
+    float: right;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*.retail{
     background-image:  url('../images/retaile.jpg');
     position: relative;
     background-size: cover;
@@ -474,7 +418,7 @@ span i {
     color: #f4eae6;
     padding: 180px 0px;
 }
-
+*/
 /************************
 Why actsy area
 ************************/
@@ -487,10 +431,10 @@ Why actsy area
 }
 
 h2.text-center {
-    color: darkblue;
+    color: #2f5061;
     font-weight: bold;
     font-size: 42px;
-    margin-bottom: 45px;
+    margin: 100px 0px 45px 0px;
 }
 
 .wh-img img {
@@ -600,7 +544,7 @@ footer.footer {
 }
 
 .service-item ul li a:hover {
-    color: darkblue;
+    color: #4297a0;
     border-bottom: 1px solid;
     padding-bottom: 5px;
 }
