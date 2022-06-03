@@ -266,6 +266,17 @@ button.owl-next span {
     right: 1%;
 }
 
+/* The best you can do is: */
+
+/* .item {
+    width: 100px;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  } */
 /***********************
   Service area
 ***********************/
@@ -289,7 +300,7 @@ button.owl-next span {
     float: right;
 }
 .service-thumb img {
-    display: block
+    display: block;
     width: 100%;
 }
 .service-content {
