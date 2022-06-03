@@ -353,6 +353,9 @@ div#social {
     background-position: center;
     position: relative;
     padding: 100px 50px;
+    background-color: #0075B3;
+    background-blend-mode: multiply;
+    border-radius: 25px;
 }
 
 .single-item-review::after {
