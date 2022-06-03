@@ -188,14 +188,15 @@ a.dropdown-item:hover {
     color: #fff;
     padding: 0 10%;
 }
-.slide-content3 p{
+.slide-content3 p,.slide-content1 p{
     text-align: left;
 }
 
 .slide-content1 h1,.slide-content2 h1,.slide-content3 h1 {
     font-family: 'raleway';
-    
+    font-weight: bold;
     letter-spacing: 10px;
+    font-size: 60px;
 }
 
 .slide-content p {
@@ -292,17 +293,29 @@ button.owl-next span {
     width: 100%;
 }
 .service-content {
-    margin-top: 50px;
+    margin-top: 65px;
 }
 .service-content p, .service-content-reverse p{
     line-height: 1.7;
     color: #2f5061;
     margin: 20px 0px;
-    max-width: 500px;
+    max-width: 425px;
     width: 100%;
     text-align: justify;
 }
-
+.service-thumb img {
+    max-width: 550px;
+    margin-top: -70px;
+    height: 360px;
+}
+h3.service-title {
+    margin-bottom: 30px;
+}
+.service-thumb-reverse img {
+    width: 530px;
+    height: 360px;
+    margin-top: -70px;
+}
 .service-container-reverse{
     overflow: hidden;
     padding: 130px 30px;
@@ -320,43 +333,51 @@ button.owl-next span {
 /************************
  Industry area 
 **************************/
-.industry-area-retail{
+.industry-area-retail {
     background: #f4eae6;
-    padding: 30px 20px;
-    border-radius: 80px 0px;
-    margin: 120px 0px 100px 0px;
+    padding: 40px 20px;
+    border-radius: 0px 80px;
+    margin: 200px 0px 200px 0px;
 }
 .retail-img {
-    max-width: 430px;
+    max-width: 570px;
     width: 100%;
     float: right;
 }
 .retail-img img,.ecomm-img img{
     width: 100%;
+    height: auto;
+    border-radius: 80px 0px 0px 0px;
+}
+.ecomm-img img{
+    border-radius: 0px 80px 0px 0px;
 }
 .retail-article {
     max-width: 400px;
     width: 100%;
     float: left;
+    margin-top: 85px;
 }
 .retail-article p,.ecomm-article p {
     margin: 25px 0px 35px;
     color: #4297a0;
+    text-align: justify;
 }
-.industry-ecomm{
+.industry-ecomm {
     margin: 120px 0px;
-
+    background: #f4eae6;
+    padding: 40px 0px;
 }
 .ecomm-img{
     float: left;
     width: 100%;
-    max-width: 430px;
+    max-width: 570px;
 }
 .ecomm-article{
     float: right;
     max-width: 400px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 85px;
 }
 
 /*.retail{
@@ -438,8 +459,14 @@ h2.text-center {
 }
 
 .wh-img img {
-    width: 95%;
+    width: 100%;
+    margin-top: -25px;
 
+}
+.itemr p {
+    text-align: justify;
+    margin-left: 30px;
+    line-height: 1.8;
 }
 
 .itemr ul li i p {
@@ -535,16 +562,22 @@ footer.footer {
     padding: 1px;
     margin-right: 5px;
 }
+.footer-box::first-child{
+    margin-left: 0px;
+}
+.footer-box{
+    margin-left: 20px;
+}
 
 .footer-box h3 {
     font-size: 18px;
-    color: #f4eae6;
+    color: #e57f84;
     text-transform: uppercase;
     margin-bottom: 20px
 }
 
 .service-item ul li a:hover {
-    color: #4297a0;
+    color: #e57f84;
     border-bottom: 1px solid;
     padding-bottom: 5px;
 }
@@ -669,6 +702,9 @@ div#social {
     width: 80%;
     margin-top: 50px;
     }
+    .retail-img,.ecomm-img{
+        max-width: 500px;
+    }
     .service-content-reverse {
     float: right;
     max-width: 360px;
@@ -688,6 +724,15 @@ div#social {
     }
     .service-thumb,.service-thumb-reverse{
         float: none;
+    }
+    .retail-article,.retail-img,.ecomm-img{
+        max-width: 100%;
+    }
+    .ecomm-article{
+        float: left;
+    }
+    .retail-img img{
+        margin-top: 60px;
     }
     .plan-content p {
     max-width: 550px;

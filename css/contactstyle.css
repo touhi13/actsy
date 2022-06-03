@@ -106,7 +106,7 @@ section.contact-area.section-padding {
     padding: 120px 0px 90px 0px;
 }
 .card {
-    background-image: linear-gradient(to right, #4297a0 , #E57F84);
+    background-color: #2f5061;
     padding: 50px;
     margin-top: 30px;
 }
@@ -158,7 +158,7 @@ input[type="submit"]:hover{
     justify-content: center;
     align-items: center;
     border-radius: 0px 50px 0px 50px;
-    background: #e57f84;
+    background: #fff;
     height: 400px;
 }
 .get-intouch {
@@ -184,13 +184,13 @@ footer.footer {
 
 .footer-box h3 {
     font-size: 18px;
-    color: #f4eae6;
+    color: #e57f84;
     text-transform: uppercase;
     margin-bottom: 20px
 }
 
 .service-item ul li a:hover {
-    color: darkblue;
+    color: #e57f84;
     border-bottom: 1px solid;
     padding-bottom: 5px;
 }

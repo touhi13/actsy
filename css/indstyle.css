@@ -117,13 +117,13 @@ footer.footer {
 
 .footer-box h3 {
     font-size: 18px;
-    color: #f4eae6;
+    color: #e57f84;
     text-transform: uppercase;
     margin-bottom: 20px
 }
 
 .service-item ul li a:hover {
-    color: darkblue;
+    color:#e57f84;
     border-bottom: 1px solid;
     padding-bottom: 5px;
 }
@@ -272,7 +272,7 @@ div#social {
 .industry-item ul li a {text-decoration: none;font-size: 18px;border: 1px solid #f4eae6;padding: 10px 80px;display: inline-block;margin-bottom: 20px;color: #e57f84;background: #f4eae6;border-radius: 25px;transition: 0.2s;}
 .industry-item ul li a:hover {background: transparent;color: #fff;transform: scale(1.1);}
 .industry-items {padding: 50px;background: #4297a0;border-radius: 25px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);}
-.industry-items h2 {color: #f4eae6;font-size: 40px;margin-bottom: 25px;}
+.industry-items h2 {color: #f4eae6;font-size: 40px;margin-bottom: 25px;font-weight: bold;}
 .single-item h3 {color:#f4eae6;/* font-size: 24px; */margin-top: 80px;}
 .industry-items i {
     color: #e57f84;

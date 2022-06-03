@@ -223,13 +223,13 @@ footer.footer {
 
 .footer-box h3 {
     font-size: 18px;
-    color: #f4eae6;
+    color: #e57f84;
     text-transform: uppercase;
     margin-bottom: 20px
 }
 
 .service-item ul li a:hover {
-    color: darkblue;
+    color:#e57f84;
     border-bottom: 1px solid;
     padding-bottom: 5px;
 }
