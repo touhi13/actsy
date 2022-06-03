@@ -277,7 +277,9 @@ div#social {
 .industry-items i {
     color: #e57f84;
 }
-
+.industry-items .heading-icon{
+    color: #B2BEB5;
+}
 .single-item p {
     color: #fff;
     font-size: 18px;
