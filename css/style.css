@@ -15,6 +15,7 @@ body {
 
     font-size: 15px;
     font-family: Raleway, regular;
+    height: auto;
 }
 
 .section-padding {
@@ -41,11 +42,17 @@ a {
     text-decoration: none;
     transition: 0.3s;
 }
-
+ul.dropdown-menu li a {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+}
 p {
     line-height: 1.4;
 }
-
+/* .dropdown-toggle::after {
+    content: none;
+} */
 .btn-style {
     background-color: #e57f84;
     padding: 10px 20px;
@@ -66,9 +73,12 @@ a.btn-style:hover{
  main menu area
 *****************************/
 header.header {
-    background: #2f5061;
     padding: 5px 0px;
 }
+.bgcolor.scrolled{
+    border-bottom: 2px solid #4297a0;
+    transition: 0.3s;
+  }
 
 i.fas.fa-align-left {
     color: #4297a0;
@@ -76,7 +86,7 @@ i.fas.fa-align-left {
 
 li.nav-item.dropdown .dropdown-menu {
     display: none;
-    top: 40px;
+    top: 38px;
     transition: 0.3s;
 }
 
@@ -85,11 +95,17 @@ li.nav-item.dropdown:hover .dropdown-menu {
 }
 
 ul.navbar-nav.ms-auto li a {
-    color: #fff;
-    font-size: 16px;
+    color: #4297a0;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
     margin-right: 10px;
+    
+}
+ul.navbar-nav.ms-auto li a:hover{
+    border-bottom: 1px solid #4297a0;
+    color: #e57f84;
+   
 }
 
 form.d-flex button {
@@ -125,7 +141,8 @@ a.dropdown-item:hover {
 **************************/
 .owl-carousel {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
+    margin-top: 80px;
 }
 
 .slide {
@@ -391,66 +408,6 @@ h3.service-title {
     margin-top: 85px;
 }
 
-/*.retail{
-    background-image:  url('../images/retaile.jpg');
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-}
-.ecommr{
-    background-image:  url('../images/ecomr.jpg');
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-}
-.lmanufac{
-    background-image:  url('../images/indus.jpg');
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.retail::after,.ecommr::after,.lmanufac::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .9;
-    z-index: -1;
-}
-.retail-left{padding: 180px 20px;color: #f4eae6;max-width: 400px;width: 100%;text-align: justify;z-index: 1;border-radius: 100px 0px;}
-
-.retail-left h3,.ecommr-left h3,.lmanufac-left h3 {color: #4297a0;margin-bottom: 20px;}
-
-.retail-left p,.ecommr-left p,.lmanufac-left p {margin-bottom: 30px;}
-
-.ecommr-left.text-center {
-    padding: 180px 20px;
-    color: #f4eae6;
-    max-width: 450px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: justify;
-}
-.lmanufac-left.text-right {
-    float: right;
-    max-width: 400px;
-    color: #f4eae6;
-    padding: 180px 0px;
-}
-*/
 /************************
 Why actsy area
 ************************/
@@ -467,11 +424,12 @@ h2.text-center {
     font-weight: bold;
     font-size: 42px;
     margin: 100px 0px 45px 0px;
+    text-transform: capitalize;
 }
 
 .wh-img img {
     width: 100%;
-    margin-top: -25px;
+    margin-top: -34px;
 
 }
 .itemr p {
@@ -489,12 +447,13 @@ h2.text-center {
   All in one area
 *************************/
 .items {
-    width: 332px;
-    display: inline-block;
-    margin-right: 30px;
-    margin-bottom: 50px;
-    text-align: justify;
-    float: right;
+   margin-top: 35px;
+}
+.fp-img img {
+    object-fit: contain;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
 .items h4 {
@@ -577,7 +536,7 @@ footer.footer {
     margin-left: 0px;
 }
 .footer-box{
-    margin-left: 20px;
+    margin-left: 80px;
 }
 
 .footer-box h3 {
@@ -705,7 +664,6 @@ div#social {
     margin-bottom: 14px;
 }
 
-
 /*responsive media query*/
 
 @media only screen and (max-width: 1200px) {
@@ -723,9 +681,7 @@ div#social {
     .service-content p, .service-content-reverse p {
     max-width: 330px;
     }
-    .items {
-    width: 250px;
-   }
+   
 }
 
 @media only screen and (max-width: 992px) {
@@ -761,7 +717,7 @@ div#social {
     width: 100%;
     }
     .items {
-    width: 240px;
+    padding: 0px 20px;
    }
 }
 
@@ -772,4 +728,7 @@ div#social {
   .plan-content p{
     margin-left: 84px;
   }
+  .items {
+    padding: 0px 30px;
+   }
 }

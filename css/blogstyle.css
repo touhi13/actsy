@@ -9,6 +9,7 @@ body{
 	
 	font-size: 14px;
 	font-family:Raleway,regular;
+    height: auto;
 }
 
 
@@ -51,17 +52,30 @@ a.btn-style:hover{
  main menu area
 *****************************/
 header.header {
-    background: #2f5061;
-    padding: 5px 0px;
+   
+    padding: 10px 0px;
 }
-
+ul.dropdown-menu li a {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+}
+ul.navbar-nav.ms-auto li a:hover{
+    border-bottom: 1px solid #4297a0;
+    color: #e57f84;
+   
+}
+.bgcolor.scrolled{
+    border-bottom: 2px solid #4297a0;
+    transition: 0.3s;
+  }
 i.fas.fa-align-left {
     color: #4297a0;
 }
 
 li.nav-item.dropdown .dropdown-menu {
     display: none;
-    top: 40px;
+    top: 38px;
     transition: 0.3s;
 }
 
@@ -70,8 +84,8 @@ li.nav-item.dropdown:hover .dropdown-menu {
 }
 
 ul.navbar-nav.ms-auto li a {
-    color: #fff;
-    font-size: 16px;
+    color: #4297a0;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
     margin-right: 10px;
@@ -166,7 +180,9 @@ footer.footer {
     padding: 100px 0px;
     border-radius: 100px 0px 0px 0px;
 }
-
+.footer-box{
+    margin-left: 80px;
+}
 .footer-box a {
     text-decoration: none;
     font-size: 17px;

@@ -1,58 +1,81 @@
-html,body{
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-body{
-	
-	font-size: 14px;
-	font-family:Raleway,regular;
+
+body {
+
+    font-size: 15px;
+    font-family: Raleway, regular;
     height: auto;
 }
 
-
-.section-padding{
+.section-padding {
     padding: 35px 0px;
+}
+
+
+h3,
+h5 {
+    color: #2f5061;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
 }
 ul.dropdown-menu li a {
     color: #fff !important;
     font-size: 14px !important;
     text-transform: capitalize !important;
 }
-ul.navbar-nav.ms-auto li a:hover{
-    border-bottom: 1px solid #4297a0;
-    color: #e57f84;
-   
-}
-
-h3,
-h5 {
+p {
+    line-height: 1.8;
     color: #2f5061;
-    font-weight: 600;
 }
-/*p{
-	color: #ffffde;
-}*/
-ul{
-    margin: 0;
-    padding: 0;
+/* .dropdown-toggle::after {
+    content: none;
+} */
+.btn-style {
+    background-color: #e57f84;
+    padding: 10px 20px;
+    color: #fff;
+    transition: 0.3s;
 }
-ul li{
-	list-style: none;
+a.btn-style:hover{
+    color: #fff;
+    background: #4297a0;
+    
 }
 
-.section-padding{
+.section-padding {
     padding: 50px 0px;
 }
-
 
 /*****************************
  main menu area
 *****************************/
 header.header {
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 .bgcolor.scrolled{
     border-bottom: 2px solid #4297a0;
@@ -79,6 +102,12 @@ ul.navbar-nav.ms-auto li a {
     text-transform: uppercase;
     font-weight: 400;
     margin-right: 10px;
+    
+}
+ul.navbar-nav.ms-auto li a:hover{
+    border-bottom: 1px solid #4297a0;
+    color: #e57f84;
+   
 }
 
 form.d-flex button {
@@ -108,74 +137,35 @@ a.dropdown-item:hover {
     color: red !important;
     color: #2f5061 !important;
 }
-
-
-
 /************************
-contact-area
+about area
 ************************/
-section.contact-area.section-padding {
-    background: #f4eae6;
-    padding: 120px 0px 90px 0px;
+section.about_us {
+    padding: 100px 0px;
+    margin-top: 100px;
+    background: #4297a0;
 }
-.card {
-    background-color: #2f5061;
-    padding: 50px;
-    margin-top: 30px;
-}
-input.form-control,textarea.form-control{
-    outline: 0;
-    background: transparent;
-    border-width: 0px 0px 1px;
-    border-bottom: 1px solid #f4eae6;
-}
-
-h2.title {
-    margin-bottom: 40px;
-    color: #f4eae6;
+.title-div h2 {
+    color: #fff;
+    text-transform: uppercase;
     font-size: 40px;
 }
-/*for chrome firefox opera*/
-input.form-control::placeholder,textarea.form-control::placeholder{
-    color: #f4eae6;
-
-}
-/*for internet explorer*/
-input.form-control:-ms-input-placeholder,textarea.form-control::placeholder{
-    color: #f4eae6;
-}
-/*for microsof edge*/
-input.form-control::-ms-input-placeholder,textarea.form-control::placeholder{
-    color: #f4eae6;
-}
-
-input[type="submit"] {
-    width: 150px;
-    border: 2px solid #f4eae6;
-    color: #fff;
-    padding: 10px 0px;
-    margin-top: 50px;
-    text-transform: uppercase;
-    transition: 0.2s;
-}
-
-input[type="submit"]:hover{
-    background: #e57f84;
-    color: #fff;
-}
-
-.contact-article img {width: 100%;background-size: cover;}
-
-.contact-article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 50px 0px 50px;
+.main-about {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     background: #fff;
-    height: 400px;
+    padding: 100px 50px;
+    margin-top: -65px;
+    margin-bottom: 20px;
 }
-.get-intouch {
-    margin-left: 50px;
+.main-about a {
+    background: #4297a0;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.main-about a:hover{
+    background-color: #e57f84;
 }
 
 /************************
@@ -186,15 +176,19 @@ footer.footer {
     padding: 100px 0px;
     border-radius: 100px 0px 0px 0px;
 }
-.footer-box{
-    margin-left: 80px;
-}
+
 .footer-box a {
     text-decoration: none;
     font-size: 17px;
     color: #f4eae6;
     padding: 1px;
     margin-right: 5px;
+}
+.footer-box::first-child{
+    margin-left: 0px;
+}
+.footer-box{
+    margin-left: 80px;
 }
 
 .footer-box h3 {
@@ -232,7 +226,8 @@ address {
 div#social {
     margin-bottom: 10px;
 }
-.smGlobalBtn{
+
+.smGlobalBtn {
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -247,90 +242,76 @@ div#social {
     font-weight: normal;
     line-height: 2em;
     border-radius: 25px;
-    -moz-border-radius:25px;
-    -webkit-border-radius:25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
 }
 
 /* facebook button class*/
-.facebookBtn{
+.facebookBtn {
     background: #4060A5;
 }
 
-.facebookBtn:before{ /* use :before to add the relevant icons */
+.facebookBtn:before {
+    /* use :before to add the relevant icons */
     font-family: "FontAwesome";
-    content: "\f09a"; /* add facebook icon */
+    content: "\f09a";
+    /* add facebook icon */
 }
 
-.facebookBtn:hover{
+.facebookBtn:hover {
     color: #4060A5;
     background: #fff;
 }
 
 /* twitter button class*/
-.twitterBtn{
+.twitterBtn {
     background: #00ABE3;
 }
 
-.twitterBtn:before{
-      font-family: "FontAwesome";
-      content: "\f099"; /* add twitter icon */
+.twitterBtn:before {
+    font-family: "FontAwesome";
+    content: "\f099";
+    /* add twitter icon */
 }
 
-.twitterBtn:hover{
-      color: #00ABE3;
-      background: #fff;
+.twitterBtn:hover {
+    color: #00ABE3;
+    background: #fff;
 }
 
 /* linkedin button class*/
-.linkedinBtn{
+.linkedinBtn {
     background: #0094BC;
 }
 
-.linkedinBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0e1"; /* add linkedin icon */
+.linkedinBtn:before {
+    font-family: "FontAwesome";
+    content: "\f0e1";
+    /* add linkedin icon */
 }
 
-.linkedinBtn:hover{
-      color: #0094BC;
-      background: #fff;
+.linkedinBtn:hover {
+    color: #0094BC;
+    background: #fff;
 }
-
 
 /* rss button class*/
-.rssBtn{
+.rssBtn {
     background: #e88845;
 }
 
-.rssBtn:before{
-      font-family: "FontAwesome";
-      content: "\f09e"; /* add rss icon */
+.rssBtn:before {
+    font-family: "FontAwesome";
+    content: "\f09e";
+    /* add rss icon */
 }
 
-.rssBtn:hover{
-      color: #e88845;
-      background: #fff;
-}
-.service-item ul li {display: block;margin-bottom: 14px;}
-
-/*Responsive media query*/
-@media only screen and (max-width: 991px) {
-  .get-intouch {
-    margin-left: 0px;
+.rssBtn:hover {
+    color: #e88845;
+    background: #fff;
 }
 
-h2.title {
-    margin: 25px 0px 30px 0px;
-    color: #f4eae6;
-    font-size: 36px;
-}
-.footer-box h3 {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-.footer-box a {
-
-    font-size: 16px;
-    
-}
+.service-item ul li {
+    display: block;
+    margin-bottom: 14px;
 }
