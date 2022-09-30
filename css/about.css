@@ -51,6 +51,7 @@ ul.dropdown-menu li a {
 p {
     line-height: 1.8;
     color: #2f5061;
+    text-align: justify;
 }
 /* .dropdown-toggle::after {
     content: none;
@@ -119,12 +120,12 @@ form.d-flex button {
     text-transform: uppercase;
     background: #e57f84;
     border: 1px solid #2f5061;
+    transition: 0.3s;
 }
 
 form.d-flex button:hover {
-    background: #f4eae6;
-    color: #2f5061;
-    border: 1px solid #2f5061;
+    background: #4297a0;
+    color: #fff;
 }
 
 ul.dropdown-menu {
@@ -315,3 +316,11 @@ div#social {
     display: block;
     margin-bottom: 14px;
 }
+
+@media only screen and (max-width: 992px) {
+   
+     div#navbarSupportedContent {
+      margin-left: 40px!important;
+      margin-top: 10px;
+  }
+  }

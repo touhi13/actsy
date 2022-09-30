@@ -123,6 +123,11 @@ form.d-flex button:hover {
     background: #f4eae6;
     color: #2f5061;
     border: 1px solid #2f5061;
+    transition: 0.3s;
+}
+form.d-flex button:hover {
+    background: #4297a0;
+    color: #fff;
 }
 
 ul.dropdown-menu {
@@ -333,7 +338,7 @@ button.owl-next span {
 }
 .service-thumb img {
     max-width: 550px;
-    margin-top: -70px;
+    /* margin-top: -70px; */
     height: 360px;
 }
 h3.service-title {
@@ -342,11 +347,11 @@ h3.service-title {
 .service-thumb-reverse img {
     width: 530px;
     height: 360px;
-    margin-top: -70px;
+    /* margin-top: -70px; */
 }
 .service-container-reverse{
     overflow: hidden;
-    padding: 130px 30px;
+    padding: 130px 20px;
 }
 .service-content-reverse {
     float: right;
@@ -731,4 +736,38 @@ div#social {
   .items {
     padding: 0px 30px;
    }
+   div#navbarSupportedContent {
+    margin-left: 40px!important;
+    margin-top: 10px;
+}
+}
+
+
+@media only screen and (max-width: 748px) {
+    .plan-content {
+        padding: 100px 20px;
+    }
+.plan-content p {
+   margin-left: 0px;
+   margin: 25px 0px 0px 0px;
+}
+.plan-content h3 {
+    margin-top: 10px;
+}
+.service-thumb-reverse img {
+    width: 100%;
+}
+}
+
+
+@media only screen and (max-width: 548px) {
+    .service-thumb-reverse img {
+        width: 100%;
+    }
+    h2.text-center {
+        font-size: 36px;
+    }
+    .slide-content1 h1, .slide-content2 h1, .slide-content3 h1 {
+        font-size: 35px;
+    }
 }
